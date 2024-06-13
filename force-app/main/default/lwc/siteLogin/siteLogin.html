@@ -4,13 +4,10 @@
             <lightning-input label="Email" value={userEmail} onchange={handleEmailChange}></lightning-input>
             <lightning-input type={computedPasswordType} label="Password" value={userPassword}
                 onchange={handlePasswordChange}></lightning-input>
-
             <lightning-button label="Login" onclick={handleLogin} class="slds-m-top_medium"></lightning-button>
-
             <lightning-button-icon icon-name="utility:preview" alternative-text="Toggle Password Visibility"
                 title="Toggle Password Visibility" onclick={togglePasswordVisibility}
                 class="password-toggle"></lightning-button-icon>
-
             <template if:true={loginMessage}>
                 <p>{loginMessage}</p>
             </template>
