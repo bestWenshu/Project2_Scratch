@@ -1,0 +1,67 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"0e18a115-8872-4725-95f1-3261b83ef3e6\",\"columns\":[{\"UUID\":\"d4b37e82-2262-4d99-94d7-4f6d1dda843e\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:customerPortal",
+              "id" : "d2984603-8d3b-4d19-99ff-de4d1828cfd0",
+              "type" : "component"
+            } ],
+            "id" : "d4b37e82-2262-4d99-94d7-4f6d1dda843e",
+            "name" : "headerSection",
+            "title" : "Theme Header",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0e18a115-8872-4725-95f1-3261b83ef3e6",
+          "type" : "component"
+        } ],
+        "id" : "39429e4e-a4db-4242-84ee-ba43dd18f7ec",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"5cd2e8c5-be58-4b96-91f6-be4a995539a1\",\"columns\":[{\"UUID\":\"416d91e6-a2c4-451a-b577-a5ae877a38b6\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "id" : "416d91e6-a2c4-451a-b577-a5ae877a38b6",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "5cd2e8c5-be58-4b96-91f6-be4a995539a1",
+          "type" : "component"
+        } ],
+        "id" : "7b709ca9-f753-4a3e-85f6-32870bb44092",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "2100ee57-2282-4199-8ec1-1a4c2d321b7b",
+      "type" : "component"
+    }
+  }
+}

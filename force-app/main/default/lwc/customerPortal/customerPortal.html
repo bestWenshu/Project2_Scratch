@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Customer Portal" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <lightning-tabset>
+                <lightning-tab label="Application Status">
+                    <template if:true={application}>
+                        <p>Status: {application.status}</p>
+                        <p>Submitted Date: {application.submittedDate}</p>
+                        <p>Review Comments: {application.reviewComments}</p>
+                    </template>
+                    <template if:false={application}>
+                        <p>No application found.</p>
+                    </template>
+                </lightning-tab>
+                <lightning-tab label="Account Information">
+                    <template if:true={account}>
+                        <p>Account Name: {account.Name}</p>
+                        <p>Email: {account.Email}</p>
+                        <p>Phone: {account.Phone}</p>
+                    </template>
+                    <template if:false={account}>
+                        <p>No account information available.</p>
+                    </template>
+                </lightning-tab>
+                <lightning-tab label="Document Submission">
+                    <lightning-file-upload label="Upload Document" name="fileUploader" accept=".pdf,.doc,.docx"
+                        record-id={recordId} onuploadfinished={handleUploadFinished}>
+                    </lightning-file-upload>
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+    </lightning-card>
+</template>

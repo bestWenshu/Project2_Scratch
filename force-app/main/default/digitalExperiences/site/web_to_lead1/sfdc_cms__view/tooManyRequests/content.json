@@ -1,0 +1,52 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Too Many Requests",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d3d2272d-e658-4a68-953f-734dc7c12bd6\",\"columns\":[{\"UUID\":\"a4b38145-ad3b-47c6-a10b-5b4801efe97b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<div style=\"display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;\">\n\t<div style=\"background-image: url(assets/img/tooManyRequests.svg) !important; background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;\"></div>\n</div>\n<div style=\"margin: 0 25px; text-align: center;\">\n\t<h1 class=\"slds-text-heading_large\">Looks like the site is experiencing higher than usual demand&#8230;</h1>\n\t<p class=\"slds-text-heading_small\">Don't go anywhere. We'll redirect you in a moment.</p>\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "e00a53fd-6e97-4fd3-9948-9170013e9dfd",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "experience_availability:autoRefresh",
+              "id" : "27f81e51-744e-4470-ac64-19ce0e791c8b",
+              "type" : "component"
+            } ],
+            "id" : "a4b38145-ad3b-47c6-a10b-5b4801efe97b",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d3d2272d-e658-4a68-953f-734dc7c12bd6",
+          "type" : "component"
+        } ],
+        "id" : "b24246ba-ecef-4bc1-a39f-27aa9cde0774",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "94d71dcc-30a1-46f8-bdc8-928ffe60a13a",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "ServiceNotAvailable",
+    "viewType" : "too-many-requests"
+  }
+}

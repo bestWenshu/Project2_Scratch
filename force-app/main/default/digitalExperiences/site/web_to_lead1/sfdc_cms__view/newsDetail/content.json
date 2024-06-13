@@ -1,0 +1,55 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "News Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"8dcd98a8-1c58-4691-95ce-8e799d89fe84\",\"columns\":[{\"UUID\":\"378789ed-4667-48a7-b582-0e9836dc3dd5\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "378789ed-4667-48a7-b582-0e9836dc3dd5",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8dcd98a8-1c58-4691-95ce-8e799d89fe84",
+          "type" : "component"
+        } ],
+        "id" : "198cf69e-c142-4998-98a5-a1c1f731e8e8",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "{!Content.contentTypeLabel}.{!Content.title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "fcdb317e-dff3-4723-bc38-5c82e7ad73fa",
+          "type" : "component"
+        } ],
+        "id" : "7e7e1571-5a28-4693-8f42-4e84371bc689",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "90301627-26ea-4a71-80e2-5516d5cd76aa",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "managed-content-sfdc_cms__news"
+  }
+}

@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Login">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Account ID" value={accountId} onchange={handleAccountIdChange}>
+            </lightning-input>
+            <template if:true={showLogin}>
+                <lightning-input label="Password" type="password" value={password} onchange={handlePasswordChange}>
+                </lightning-input>
+                <lightning-button label="Login" onclick={handleLogin} class="slds-m-top_medium">
+                </lightning-button>
+            </template>
+            <template if:true={showResetPassword}>
+                <lightning-input label="New Password" type="password" value={newPassword}
+                    onchange={handleNewPasswordChange}>
+                </lightning-input>
+                <lightning-button label="Reset Password" onclick={handleResetPassword} class="slds-m-top_medium">
+                </lightning-button>
+            </template>
+            <template if:true={loginMessage}>
+                <p class="slds-m-top_medium">{loginMessage}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

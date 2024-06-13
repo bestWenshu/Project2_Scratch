@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__styles",
+  "title" : "print.css",
+  "contentBody" : {
+    "sfdc_cms:media" : {
+      "source" : {
+        "type" : "file",
+        "ref" : "0sNRu0000003Wxt",
+        "size" : 1013,
+        "mimeType" : "text/css"
+      },
+      "url" : "/cms/media/MCAFVBOTB2IRCBVNQUIMWSVZKYVE?version=1.1"
+    }
+  }
+}

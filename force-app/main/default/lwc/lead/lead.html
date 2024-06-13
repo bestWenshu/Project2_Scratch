@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Lead form Application" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form object-api-name="Lead" onsuccess={handleSuccess} onerror={handleError}>
+                <lightning-messages></lightning-messages>
+                <lightning-input-field field-name="FirstName"></lightning-input-field>
+                <lightning-input-field field-name="LastName"></lightning-input-field>
+                <lightning-input-field field-name="Company"></lightning-input-field>
+                <lightning-input-field field-name="Email"></lightning-input-field>
+                <lightning-input-field field-name="Region__c"></lightning-input-field>
+                <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+                <lightning-input-field field-name="Type_of_work__c"></lightning-input-field>
+                <lightning-input-field field-name="Products_Services_Offered__c"></lightning-input-field>
+
+                <div class="slds-m-top_medium">
+                    <lightning-button variant="brand" type="submit" name="save" label="Submit" class="slds-m-top_small"
+                        onclick={handleSubmit}></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

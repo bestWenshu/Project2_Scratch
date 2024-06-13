@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="First-Time Login - Reset Password">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Username" value={username} onchange={handleUsernameChange}
+                required></lightning-input>
+            <lightning-input label="One-Time Access Code" value={accessCode} onchange={handleAccessCodeChange}
+                required></lightning-input>
+            <lightning-input label="New Password" type="password" value={newPassword} onchange={handleNewPasswordChange}
+                required></lightning-input>
+            <lightning-input label="Re-enter New Password" type="password" value={reenterNewPassword}
+                onchange={handleReenterNewPasswordChange} required></lightning-input>
+            <lightning-button label="Reset Password" onclick={handleResetPassword}
+                class="slds-m-top_medium"></lightning-button>
+            <template if:true={loginMessage}>
+                <p>{loginMessage}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

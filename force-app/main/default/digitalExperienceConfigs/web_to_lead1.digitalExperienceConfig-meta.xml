@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>web-to-lead</label>
+    <site>
+        <urlPathPrefix>leadForm</urlPathPrefix>
+    </site>
+    <space>site/web_to_lead1</space>
+</DigitalExperienceConfig>
